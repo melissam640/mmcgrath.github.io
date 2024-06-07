@@ -40,3 +40,29 @@
 .read-the-docs {
   color: #888;
 }
+
+.container {
+  display: flex;
+}
+
+.image-section {
+  flex: 0 0 300px; /* Fixed width for the image section */
+}
+
+.sticky-image {
+  width: 100%; /* Ensure the image takes the full width of its container */
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
+.text-section {
+  flex: 1; /* Remaining space for the text section */
+  padding: 20px;
+}
+
+.text-block {
+  margin-bottom: 80vh; /* Adjust this value to create space between text sections */
+}
