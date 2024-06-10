@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    overflow: visible; /* Ensure no overflow issue */
+  }
+  
+  .image-section {
+    flex: 0 0 300px; /* Fixed width for the image section */
+    overflow: visible; /* Ensure no overflow issue */
+  }
+  
+  .image-section.sticky .sticky-image {
+    position: sticky;
+    top: 50%; /* Start from the middle */
+    transform: translateY(-50%); /* Center the image */
+  }
+  
+  .text-section {
+    flex: 1; /* Remaining space for the text section */
+    padding: 20px;
+  }
+  
+  .text-block {
+    margin-bottom: 100vh; /* Adjust this value to create space between text sections */
+  }
+  
+  
