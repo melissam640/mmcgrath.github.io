@@ -1,0 +1,17 @@
+.sticky-image {
+    border-radius: 50%;
+    width: 60%;
+  }
+
+.name {
+    font-size: 2em;
+  }
+  
+.title {
+    font-size: 1.5em;
+  }
+
+.intro-section {
+    text-align: left;
+    margin-top: 10%;
+}

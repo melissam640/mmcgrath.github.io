@@ -5,6 +5,7 @@ import './App.css';
 import MyButton from './MyButton.jsx';
 import NavBar from '../components/NavBar.jsx';
 import StickyScroll from '../components/ScrollingBio.jsx';
+import Bio from '../components/Bio.jsx';
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -27,9 +28,9 @@ function App() {
         <header>
           <NavBar />
         </header>
-        <StickyScroll />
-        <MyButton message="Start" />
-        <MyButton message="End" />
+        <Bio />
+        {/* <MyButton message="Start" /> */}
+        {/* <MyButton message="End" /> */}
       </div>
       
     </>
