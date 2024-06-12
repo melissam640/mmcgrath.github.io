@@ -1,5 +1,4 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
   }
@@ -19,7 +18,11 @@ body {
     top: 50%; /* Start from the middle */
     transform: translateY(-50%); /* Center the image */
   }
-  
+  .sticky-image {
+    border-radius: 50%;
+    width: 80%;
+  }
+
   .text-section {
     flex: 1; /* Remaining space for the text section */
     padding: 20px;
@@ -29,4 +32,8 @@ body {
     margin-bottom: 100vh; /* Adjust this value to create space between text sections */
   }
   
+  .first-text-block {
+    margin-top: 50vh; /* Start the first text block from the middle of the viewport */
+    transform: translateY(-50%); /* Adjust to align with the image */
+  }
   

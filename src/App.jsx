@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import MyButton from './MyButton.jsx';
 import NavBar from '../components/NavBar.jsx';
+import StickyScroll from '../components/ScrollingBio.jsx';
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -26,10 +27,7 @@ function App() {
         <header>
           <NavBar />
         </header>
-        <Fade>
-        <h1>Welcome!</h1>
-        <p>I'm Melissa, a former senior project engineer turned software developer.</p>
-        </Fade>
+        <StickyScroll />
         <MyButton message="Start" />
         <MyButton message="End" />
       </div>
