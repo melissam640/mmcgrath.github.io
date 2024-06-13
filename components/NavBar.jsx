@@ -1,10 +1,11 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import './NavBar.css';
 
 function NavBar() {
   return (
-    <Navbar expand="lg" fixed="top" className="bg-body-tertiary">
+    <Navbar expand="lg" fixed="top" className="nav-body">
       <Container>
         <Navbar.Brand href="#home">Melissa McGrath</Navbar.Brand>
         <Navbar.Toggle />
