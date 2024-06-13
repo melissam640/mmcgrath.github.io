@@ -12,10 +12,10 @@ function Bio() {
       <Col className="intro-section">
         <p className="name">Melissa McGrath</p>
         <p className="title">Software Engineer</p>
-        <a href="">
+        <a href="www.linkedin.com/in/melissa-mcgrath">
           <Linkedin />
         </a>
-        <a href="">
+        <a href="https://github.com/melissam640">
           <Github />
         </a>
       </Col>
