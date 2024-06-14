@@ -4,8 +4,8 @@ import './Skills.css';
 
 function Skills() {
   return (
-    <div className="about-me-section">
-        <p className="about-me-title">
+    <div className="skills-section">
+        <p className="skills-title">
           Technologies
         </p>
         <div className="tech">
