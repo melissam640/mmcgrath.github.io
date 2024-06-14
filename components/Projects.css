@@ -3,7 +3,7 @@
     src: url(src/assets/TTFirsNeueTrialRegular.ttf);
 }
 
-.skills-section {
+.projects-section {
     text-align: left;
     margin-top: 100px;
     margin-left: 5%;
@@ -12,6 +12,15 @@
     font-family: TT Firs Neue Trl;
 }
 
-.skills-title {
+.projects-title {
     font-size: 3.5em;
+}
+
+.projects-sub-title {
+    font-size: 2.5em;
+}
+
+.project-gif {
+    width: 80%;
+    padding-bottom: 5%;
 }

@@ -6,6 +6,7 @@ import NavBar from '../components/NavBar.jsx';
 import Intro from '../components/Intro.jsx';
 import Bio from '../components/Bio.jsx';
 import Skills from '../components/Skills.jsx';
+import Projects from '../components/Projects.jsx';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Intro />
         <Bio />
         <Skills />
+        <Projects />
       </div>
       
     </>
