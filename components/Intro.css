@@ -3,18 +3,25 @@
     src: url(src/assets/TTFirsNeueTrialRegular.ttf);
 }
 
-.about-me-section {
+.sticky-image {
+    border-radius: 50%;
+    width: 100%;
+  }
+
+.intro-section {
     text-align: left;
-    margin-top: 100px;
+    margin-top: 8%;
     margin-left: 5%;
     color: white;
     font-family: TT Firs Neue Trl;
 }
 
-.about-me-title {
+.name {
     font-size: 3.5em;
-}
-
-.about-me {
-    font-size: 1em;
-}
+    line-height: 1;
+  }
+  
+.title {
+    font-size: 1.5em;
+    display: inline;
+  }
