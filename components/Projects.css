@@ -3,7 +3,7 @@
     src: url(src/assets/TTFirsNeueTrialRegular.ttf);
 }
 
-.projects-section {
+#projects-section {
     text-align: left;
     margin-top: 100px;
     margin-left: 5%;

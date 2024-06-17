@@ -7,7 +7,7 @@ function Resume() {
     }
   
     return (
-      <button onClick={downloadResume}>Find My Resume Here</button>
+      <button onClick={downloadResume} id="resume">Find My Resume Here</button>
     );
   }
 

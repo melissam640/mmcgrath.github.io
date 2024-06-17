@@ -4,7 +4,7 @@ import './Skills.css';
 
 function Skills() {
   return (
-    <div className="skills-section">
+    <div id="skills-section">
         <p className="skills-title">
           Technologies
         </p>

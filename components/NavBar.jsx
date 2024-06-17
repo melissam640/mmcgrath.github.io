@@ -12,9 +12,10 @@ function NavBar() {
         <Navbar.Collapse className="justify-content-end">
           <Nav>
             <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#bio">Bio</Nav.Link>
-            <Nav.Link href="#skills">Skills</Nav.Link>
-            <Nav.Link href="#projects">Projects</Nav.Link>
+            <Nav.Link href="#about-me-section">Bio</Nav.Link>
+            <Nav.Link href="#skills-section">Skills</Nav.Link>
+            <Nav.Link href="#projects-section">Projects</Nav.Link>
+            <Nav.Link href="#resume">Resume</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

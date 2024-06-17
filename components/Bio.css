@@ -3,7 +3,7 @@
     src: url(src/assets/TTFirsNeueTrialRegular.ttf);
 }
 
-.about-me-section {
+#about-me-section {
     text-align: left;
     margin-top: 100px;
     margin-left: 5%;

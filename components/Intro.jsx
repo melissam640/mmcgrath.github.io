@@ -5,7 +5,7 @@ import './Intro.css';
 
 function Intro() {
   return (
-    <Container className="intro-section">
+    <Container className="intro-section" id="home">
       <Row>
       <Col xs lg="4">
         <img src="src/assets/profile.jpg" alt="Sticky Image" className="sticky-image" />

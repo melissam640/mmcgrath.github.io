@@ -6,7 +6,7 @@ import './Projects.css';
 
 function Projects() {
 return (
-<div className="projects-section">
+<div id="projects-section">
     <p className="projects-title">
       Projects
     </p>

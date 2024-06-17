@@ -2,7 +2,7 @@ import './Bio.css';
 
 function Bio() {
   return (
-    <div className="about-me-section">
+    <div id="about-me-section">
         <p className="about-me-title">
           About Me
         </p>
