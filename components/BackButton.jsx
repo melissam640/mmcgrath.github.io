@@ -1,3 +1,5 @@
+import { IoIosArrowUp } from "react-icons/io";
+
 function MyButton(props) {
 
     // let { message } = props;
@@ -9,7 +11,9 @@ function MyButton(props) {
     }
     
     return (
-      <button onClick={handleClick}>{props.message}</button>
+      <button onClick={handleClick}>
+        <IoIosArrowUp />
+      </button>
     );
   }
 

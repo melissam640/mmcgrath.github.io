@@ -7,6 +7,8 @@ import Intro from '../components/Intro.jsx';
 import Bio from '../components/Bio.jsx';
 import Skills from '../components/Skills.jsx';
 import Projects from '../components/Projects.jsx';
+import Resume from '../components/Resume.jsx';
+import BackButton from '../components/BackButton.jsx';
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
         <Bio />
         <Skills />
         <Projects />
+        <Resume />
+        <BackButton />
       </div>
       
     </>
