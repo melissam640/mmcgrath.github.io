@@ -1,9 +1,11 @@
 import { SiPython, SiHtml5, SiCss3, SiJavascript, SiFlask, SiPostgresql,
         SiSqlalchemy, SiReact, SiJinja } from "react-icons/si";
+import { Fade } from "react-awesome-reveal";
 import './Skills.css';
 
 function Skills() {
   return (
+    <Fade>
     <div id="skills-section">
         <p className="skills-title">
           Technologies
@@ -22,6 +24,7 @@ function Skills() {
           <SiJinja /> Jinja  
         </div>
     </div>
+    </Fade>
   );
 }
 

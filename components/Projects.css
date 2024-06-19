@@ -5,11 +5,15 @@
 
 #projects-section {
     text-align: left;
-    margin-top: 100px;
+    margin-top: 20%;
     margin-left: 5%;
     margin-right: 5%;
     color: white;
     font-family: TT Firs Neue Trl;
+}
+
+.project-description {
+    margin-top: 5%;
 }
 
 .projects-title {
@@ -18,9 +22,17 @@
 
 .projects-sub-title {
     font-size: 2.5em;
+    padding-right: 2%;
+    display: inline;
 }
 
 .project-gif {
     width: 80%;
     padding-bottom: 5%;
+}
+
+.project-icon-links {
+    font-size: 1.5em;
+    padding-right: 1%;
+    color: white;
 }

@@ -5,7 +5,7 @@
 
 #about-me-section {
     text-align: left;
-    margin-top: 100px;
+    margin-top: 20%;
     margin-left: 5%;
     margin-right: 5%;
     color: white;
@@ -17,5 +17,5 @@
 }
 
 .about-me {
-    font-size: 1em;
+    font-size: 1.5em;
 }

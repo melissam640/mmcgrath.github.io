@@ -2,26 +2,28 @@ import { SiPython, SiHtml5, SiCss3, SiJavascript, SiFlask, SiPostgresql,
         SiSqlalchemy, SiJinja } from "react-icons/si";
 import { Github, Youtube } from 'react-bootstrap-icons';
 import {Container, Row, Col} from 'react-bootstrap';
+import { Fade } from "react-awesome-reveal";
 import './Projects.css';
 
 function Projects() {
 return (
+<Fade>
 <div id="projects-section">
     <p className="projects-title">
       Projects
     </p>
     <Container>
-        <Row>
+        <Row className="project-description" id="totalview">
             <Col md="6">
                 <img src="src/assets/totalview1.gif" className="project-gif"/>
                 <img src="src/assets/totalview2.gif" className="project-gif"/>
             </Col>
             <Col>
                 <p className="projects-sub-title">TotalView</p>
-                <a href="https://github.com/melissam640/totalview.git">
+                <a href="https://github.com/melissam640/totalview.git" className="project-icon-links">
                 <Github />
                 </a>&nbsp;
-                <a href="https://www.youtube.com/watch?v=cfkpgqYO2BU">
+                <a href="https://www.youtube.com/watch?v=cfkpgqYO2BU" className="project-icon-links">
                 <Youtube />
                 </a>
                 <p>
@@ -40,13 +42,16 @@ return (
                 also toggle between light and dark mode and set a preferred
                 color for main buttons and navigation links.
                 </p>
+                <div className="project-tech-icons">
                 <SiPython /> &nbsp; <SiHtml5 /> &nbsp; <SiCss3 /> &nbsp;
                 <SiJavascript /> &nbsp; <SiJinja /> &nbsp; <SiFlask /> &nbsp;
                 <SiPostgresql /> &nbsp; <SiSqlalchemy />
+                </div>
             </Col>
         </Row>
     </Container>
 </div>
+</Fade>
 );
 }
 

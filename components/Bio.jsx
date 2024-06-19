@@ -1,7 +1,9 @@
+import { Fade } from "react-awesome-reveal";
 import './Bio.css';
 
 function Bio() {
   return (
+    <Fade>
     <div id="about-me-section">
         <p className="about-me-title">
           About Me
@@ -16,6 +18,7 @@ function Bio() {
               contributing to impactful projects and advancing in the field.
         </p>  
     </div>
+    </Fade>
   );
 }
 

@@ -1,29 +1,32 @@
 import { Github } from 'react-bootstrap-icons';
 import { Linkedin } from 'react-bootstrap-icons';
 import {Container, Row, Col} from 'react-bootstrap';
+import { Fade } from "react-awesome-reveal";
 import './Intro.css';
 
 function Intro() {
   return (
-    <Container className="intro-section" id="home">
+    <Container id="home">
+      <Fade>
       <Row>
       <Col xs lg="4">
-        <img src="src/assets/profile.jpg" alt="Sticky Image" className="sticky-image" />
+        <img src="src/assets/profile.jpg" alt="Profile Photo" className="profile-photo" />
       </Col>
       <Col className="intro-section">
-        <p className="name">
+          <p className="name">
           Melissa<br/>
           McGrath
-        </p>
-        <p className="title">Software Engineer</p>&nbsp;
-        <a href="www.linkedin.com/in/melissa-mcgrath">
+          </p>
+        <p className="title">Software Engineer</p><br/>
+        <a href="www.linkedin.com/in/melissa-mcgrath" className="icon-link">
           <Linkedin />
         </a>&nbsp;
-        <a href="https://github.com/melissam640">
+        <a href="https://github.com/melissam640" className="icon-link">
           <Github />
         </a>
       </Col>
       </Row>
+      </Fade>
     </Container>
   );
 }
