@@ -1,21 +1,19 @@
 import { Github } from 'react-bootstrap-icons';
 import { Linkedin } from 'react-bootstrap-icons';
 import {Container, Row, Col} from 'react-bootstrap';
-import { Fade } from "react-awesome-reveal";
+import { Slide } from "react-awesome-reveal";
 import './Intro.css';
 
 function Intro() {
   return (
-    <Container id="home">
-      <Fade>
+    <Container fluid id="home">
       <Row>
       <Col xs lg="4">
         <img src="src/assets/profile.jpg" alt="Profile Photo" className="profile-photo" />
       </Col>
       <Col className="intro-section">
           <p className="name">
-          Melissa<br/>
-          McGrath
+          Melissa McGrath
           </p>
         <p className="title">Software Engineer</p><br/>
         <a href="www.linkedin.com/in/melissa-mcgrath" className="icon-link">
@@ -26,7 +24,6 @@ function Intro() {
         </a>
       </Col>
       </Row>
-      </Fade>
     </Container>
   );
 }

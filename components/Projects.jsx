@@ -2,13 +2,13 @@ import { SiPython, SiHtml5, SiCss3, SiJavascript, SiFlask, SiPostgresql,
         SiSqlalchemy, SiJinja } from "react-icons/si";
 import { Github, Youtube } from 'react-bootstrap-icons';
 import {Container, Row, Col} from 'react-bootstrap';
-import { Fade } from "react-awesome-reveal";
+import { Slide, Fade } from "react-awesome-reveal";
 import './Projects.css';
 
 function Projects() {
 return (
-<Fade>
 <div id="projects-section">
+    <Slide triggerOnce cascade damping={0.1}>
     <p className="projects-title">
       Projects
     </p>
@@ -50,8 +50,8 @@ return (
             </Col>
         </Row>
     </Container>
+    </Slide>
 </div>
-</Fade>
 );
 }
 

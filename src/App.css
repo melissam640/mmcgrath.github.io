@@ -1,14 +1,12 @@
 body {
-  background-image: url("src/assets/background.jpg");
-  background-color: #cccccc;
-  background-attachment: fixed;
-  background-size: cover;
+  /* background-image: url("src/assets/background.jpg"); */
+  background-color: lightblue;
+  /* background-attachment: fixed; */
+  /* background-size: cover; */
 }
 
 #root {
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 

@@ -5,11 +5,14 @@
 
 #about-me-section {
     text-align: left;
-    margin-top: 20%;
-    margin-left: 5%;
-    margin-right: 5%;
-    color: white;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: black;
     font-family: TT Firs Neue Trl;
+    background-image: url("../src/assets/background2.png");
+    background-position-x: center;
 }
 
 .about-me-title {

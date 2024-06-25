@@ -12,17 +12,15 @@ function NavBar() {
   const handleSelect = (eventKey) => alert(`selected ${eventKey}`);
   
   return (
-    <Navbar expand="lg" fixed="top" className="nav-body">
+    <Navbar expand="lg" className="nav-body">
       <Container>
         <Navbar.Brand href="#home">Melissa McGrath</Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">
           <Nav>
-            <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#about-me-section">Bio</Nav.Link>
             <Nav.Link href="#skills-section">Skills</Nav.Link>
             <Nav.Link href="#projects-section">Projects</Nav.Link>
-            {/* <Button onClick={downloadResume} className="md-0" id="resume">Resume</Button> */}
           </Nav>
           <Nav variant="pills" activeKey="1" onSelect={downloadResume}>
           <Nav.Item>

@@ -4,12 +4,15 @@
 }
 
 #home {
-  margin-top: 15%;
+  padding-top: 15%;
+  padding-bottom: 20%;
+  background-image: url("../src/assets/background.jpg");
+  background-position-y: bottom;
 }
 
 .profile-photo {
     border-radius: 50%;
-    width: 90%;
+    width: 80%;
     margin-left: 5%;
   }
 
