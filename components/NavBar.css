@@ -1,11 +1,5 @@
-@font-face {
-    font-family: TT Firs Neue Trl;
-    src: url(src/assets/TTFirsNeueTrialRegular.ttf);
-}
-
 .nav-body {
     background-color:white;
-    font-family: TT Firs Neue Trl;
 }
 
 #resume-button {

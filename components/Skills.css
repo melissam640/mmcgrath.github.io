@@ -1,8 +1,3 @@
-@font-face {
-    font-family: TT Firs Neue Trl;
-    src: url(src/assets/TTFirsNeueTrialRegular.ttf);
-}
-
 #skills-section {
     text-align: left;
     padding-top: 5%;
@@ -10,7 +5,6 @@
     padding-left: 5%;
     padding-right: 5%;
     color: white;
-    font-family: TT Firs Neue Trl;
     background-image: url("../src/assets/background.jpg");
     background-size: cover;
     background-position-y: bottom;
