@@ -12,6 +12,7 @@
     color: black;
     font-family: TT Firs Neue Trl;
     background-image: url("../src/assets/background4.png");
+    background-size: cover;
 }
 
 .project-description {

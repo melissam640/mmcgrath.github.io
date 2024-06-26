@@ -4,9 +4,10 @@
 }
 
 #home {
-  padding-top: 15%;
+  padding-top: 10%;
   padding-bottom: 20%;
   background-image: url("../src/assets/background.jpg");
+  background-size: cover;
   background-position-y: bottom;
 }
 
