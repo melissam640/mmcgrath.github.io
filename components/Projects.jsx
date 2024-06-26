@@ -15,8 +15,8 @@ return (
     <Container>
         <Row className="project-description" id="totalview">
             <Col md="6">
-                <img src="src/assets/totalview1.gif" className="project-gif"/>
-                <img src="src/assets/totalview2.gif" className="project-gif"/>
+                <img src="../src/assets/totalview1.gif" className="project-gif"/>
+                <img src="../src/assets/totalview2.gif" className="project-gif"/>
             </Col>
             <Col>
                 <p className="projects-sub-title">TotalView</p>
