@@ -2,7 +2,7 @@ import { SiPython, SiHtml5, SiCss3, SiJavascript, SiFlask, SiPostgresql,
         SiSqlalchemy, SiJinja } from "react-icons/si";
 import { Github, Youtube } from 'react-bootstrap-icons';
 import {Container, Row, Col} from 'react-bootstrap';
-import { Slide, Fade } from "react-awesome-reveal";
+import { Slide } from "react-awesome-reveal";
 import './Projects.css';
 
 function Projects() {

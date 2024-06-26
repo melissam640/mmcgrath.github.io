@@ -1,7 +1,6 @@
 import { Github } from 'react-bootstrap-icons';
 import { Linkedin } from 'react-bootstrap-icons';
 import {Container, Row, Col} from 'react-bootstrap';
-import { Slide } from "react-awesome-reveal";
 import './Intro.css';
 
 function Intro() {

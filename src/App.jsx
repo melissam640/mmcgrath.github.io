@@ -1,5 +1,3 @@
-import { useState, useEffect } from 'react';
-import { Fade } from "react-awesome-reveal";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import NavBar from '../components/NavBar.jsx';
