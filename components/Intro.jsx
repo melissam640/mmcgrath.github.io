@@ -8,7 +8,7 @@ function Intro() {
     <Container fluid id="home">
       <Row>
       <Col xs lg="4">
-        <img src="../src/assets/profile.jpg" alt="Profile Photo" className="profile-photo" />
+        <img src="/mmcgrath.github.io/src/assets/profile.jpg" alt="Profile Photo" className="profile-photo" />
       </Col>
       <Col className="intro-section">
           <p className="name">
