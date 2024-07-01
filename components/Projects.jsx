@@ -2,7 +2,9 @@ import { SiPython, SiHtml5, SiCss3, SiJavascript, SiFlask, SiPostgresql,
         SiSqlalchemy, SiJinja } from "react-icons/si";
 import { Github, Youtube } from 'react-bootstrap-icons';
 import {Container, Row, Col} from 'react-bootstrap';
-import { Slide } from "react-awesome-reveal";
+import { Slide } from 'react-awesome-reveal';
+import totalview1 from '../src/assets/totalview1.gif';
+import totalview2 from '../src/assets/totalview2.gif';
 import './Projects.css';
 
 function Projects() {
@@ -15,8 +17,8 @@ return (
     <Container>
         <Row className="project-description" id="totalview">
             <Col md="6">
-                <img src="/mmcgrath.github.io/src/assets/totalview1.gif" className="project-gif"/>
-                <img src="/mmcgrath.github.io/src/assets/totalview2.gif" className="project-gif"/>
+                <img src={totalview1} className="project-gif"/>
+                <img src={totalview2} className="project-gif"/>
             </Col>
             <Col>
                 <p className="projects-sub-title">TotalView</p>
