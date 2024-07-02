@@ -1,14 +1,10 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import resume from '/src/assets/MelissaMcGrathResume.pdf';
 import './NavBar.css';
 
 function NavBar() {
-  
-  function downloadResume() {
-    window.location.href = "src/assets/MelissaMcGrathResume.pdf";
-  }
-  const handleSelect = (eventKey) => alert(`selected ${eventKey}`);
   
   return (
     <Navbar expand="lg" className="nav-body">
@@ -21,9 +17,9 @@ function NavBar() {
             <Nav.Link href="#skills-section">Skills</Nav.Link>
             <Nav.Link href="#projects-section">Projects</Nav.Link>
           </Nav>
-          <Nav variant="pills" activeKey="1" onSelect={downloadResume}>
+          <Nav variant="pills">
           <Nav.Item>
-            <Nav.Link eventKey="1" id="resume-button">
+            <Nav.Link href={resume} target="_blank" rel="noreferrer" id="resume-button">
               Resume
             </Nav.Link>
           </Nav.Item>
