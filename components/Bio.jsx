@@ -9,18 +9,19 @@ function Bio() {
           About Me
         </p>
         <p className="about-me">
-          With four years in construction project management, I've refined 
+          I'm a former senior project engineer turned software engineer.
+        </p>
+        <p className="about-me">
+          With four years in the construction industry, I refined 
           my problem-solving, teamwork, and project execution abilities. 
         </p>
         <p className="about-me">
-          Transitioning from construction, I pursued programming for its 
-          logical problem-solving appeal, completing a rigorous bootcamp at 
-          Hackbright.
+          After discovering my passion for programming, I pursued software 
+          development, completing a rigorous bootcamp at Hackbright.
         </p>
         <p className="about-me">
-          I'm eager to apply my engineering background and 
-          technical expertise to innovate in software development, 
-          contributing to impactful projects and advancing in the field.
+          I'm eager to apply my previous project engineering experience and new 
+          technical skills to contribute to impactful software projects.
         </p>
         </Slide>
     </div>
