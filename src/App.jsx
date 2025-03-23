@@ -3,6 +3,7 @@ import '@radix-ui/themes/styles.css';
 import { Theme } from '@radix-ui/themes';
 //import './App.css';
 import { Flex, Box, Grid } from '@radix-ui/themes';
+import NavTabs from '../components/NavTabs.jsx';
 import Profile from '../components/Profile.jsx';
 //import Bio from '../components/Bio.jsx';
 //import Skills from '../components/Skills.jsx';
@@ -21,10 +22,7 @@ function App() {
             <Profile />
           </Box>
           <Box>
-            <Grid columns="1" gap="3" rows="repeat(2)" width="auto">
-              <p>Navigation Tabs Section</p>
-              <p>Scrolling Section</p>
-            </Grid>
+            <NavTabs />
           </Box>
         </Flex>
         </Grid>
