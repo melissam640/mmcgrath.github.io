@@ -3,14 +3,14 @@ import { Box, Flex, Text, Button, IconButton, Container } from "@radix-ui/themes
 import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 import './Header.css';
 
-const Header = () => {
+const Header = ({ selected, setSelected }) => {
   
   const HOME_SELECTED = 1;
   const ABOUT_ME_SELECTED = 2;
   const PROJECTS_SELECTED = 3;
   const RESUME_SELECTED = 4;
 
-  const [selected, setSelected] = useState(HOME_SELECTED);
+  //const [selected, setSelected] = useState(HOME_SELECTED);
 
   return (
     <Box as="header" className="header-border">
