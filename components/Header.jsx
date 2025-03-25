@@ -1,8 +1,17 @@
-import { Box, Flex, Text, Link, IconButton, Container } from "@radix-ui/themes";
+import { useState } from "react";
+import { Box, Flex, Text, Button, IconButton, Container } from "@radix-ui/themes";
 import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 import './Header.css';
 
 const Header = () => {
+  
+  const HOME_SELECTED = 1;
+  const ABOUT_ME_SELECTED = 2;
+  const PROJECTS_SELECTED = 3;
+  const RESUME_SELECTED = 4;
+
+  const [selected, setSelected] = useState(HOME_SELECTED);
+
   return (
     <Box as="header" className="header-border">
       <Container size="4">
@@ -12,18 +21,34 @@ const Header = () => {
 
           {/* Navigation Links */}
           <Flex gap="6" align="center">
-            <Link href="#" color="gray" size="3">
+            <Button 
+              variant={selected === HOME_SELECTED ? "soft" : "ghost"} 
+              radius="full" 
+              onClick={() => setSelected(HOME_SELECTED)}
+            >
               Home
-            </Link>
-            <Link href="#" color="gray" size="3">
+            </Button>
+            <Button 
+              variant={selected === ABOUT_ME_SELECTED ? "soft" : "ghost"} 
+              radius="full" 
+              onClick={() => setSelected(ABOUT_ME_SELECTED)}
+            >
               About Me
-            </Link>
-            <Link href="#" color="gray" size="3">
+            </Button>
+            <Button 
+              variant={selected === PROJECTS_SELECTED ? "soft" : "ghost"} 
+              radius="full" 
+              onClick={() => setSelected(PROJECTS_SELECTED)}
+            >
               Projects
-            </Link>
-            <Link href="#" color="gray" size="3">
+            </Button>
+            <Button 
+              variant={selected === RESUME_SELECTED ? "soft" : "ghost"} 
+              radius="full" 
+              onClick={() => setSelected(RESUME_SELECTED)}
+            >
               Resume
-            </Link>
+            </Button>
           </Flex>
 
           {/* Social Media Links */}
