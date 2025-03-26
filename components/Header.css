@@ -1,3 +1,8 @@
-.header-border {
+.header {
+  background-color: #111113;
   border-bottom: 0.25px solid #FFFFFF3B;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  transition: box-shadow 0.3s ease;
 }

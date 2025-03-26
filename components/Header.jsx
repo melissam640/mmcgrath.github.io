@@ -1,20 +1,19 @@
-import { useState } from "react";
-import { Box, Flex, Text, Button, IconButton, Container } from "@radix-ui/themes";
+import { Flex, Text, Button, IconButton, Container } from "@radix-ui/themes";
 import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 import './Header.css';
 
 const Header = ({ selected, setSelected }) => {
   
-  const HOME_SELECTED = 1;
-  const ABOUT_ME_SELECTED = 2;
-  const PROJECTS_SELECTED = 3;
-  const RESUME_SELECTED = 4;
-
-  //const [selected, setSelected] = useState(HOME_SELECTED);
+  // navigation links that can be selected
+  const HOME = 1;
+  const ABOUT_ME = 2;
+  const PROJECTS = 3;
+  const RESUME = 4;
 
   return (
-    <Box as="header" className="header-border">
+    <Flex as="header" className="header" width="100vw">
       <Container size="4">
+
         <Flex justify="between" align="center" p="2" gap="4">
           {/* Website Title */}
           <Text size="4" weight="bold">Melissa McGrath</Text>
@@ -22,30 +21,30 @@ const Header = ({ selected, setSelected }) => {
           {/* Navigation Links */}
           <Flex gap="6" align="center">
             <Button 
-              variant={selected === HOME_SELECTED ? "soft" : "ghost"} 
+              variant={selected === HOME ? "soft" : "ghost"} 
               radius="full" 
-              onClick={() => setSelected(HOME_SELECTED)}
+              onClick={() => setSelected(HOME)}
             >
               Home
             </Button>
             <Button 
-              variant={selected === ABOUT_ME_SELECTED ? "soft" : "ghost"} 
+              variant={selected === ABOUT_ME ? "soft" : "ghost"} 
               radius="full" 
-              onClick={() => setSelected(ABOUT_ME_SELECTED)}
+              onClick={() => setSelected(ABOUT_ME)}
             >
               About Me
             </Button>
             <Button 
-              variant={selected === PROJECTS_SELECTED ? "soft" : "ghost"} 
+              variant={selected === PROJECTS ? "soft" : "ghost"} 
               radius="full" 
-              onClick={() => setSelected(PROJECTS_SELECTED)}
+              onClick={() => setSelected(PROJECTS)}
             >
               Projects
             </Button>
             <Button 
-              variant={selected === RESUME_SELECTED ? "soft" : "ghost"} 
+              variant={selected === RESUME ? "soft" : "ghost"} 
               radius="full" 
-              onClick={() => setSelected(RESUME_SELECTED)}
+              onClick={() => setSelected(RESUME)}
             >
               Resume
             </Button>
@@ -65,8 +64,9 @@ const Header = ({ selected, setSelected }) => {
             </IconButton>
           </Flex>
         </Flex>
+
       </Container>
-    </Box>
+    </Flex>
   );
 };
 
