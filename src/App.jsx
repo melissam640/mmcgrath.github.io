@@ -1,9 +1,10 @@
 import { useState } from "react";
 import '@radix-ui/themes/styles.css';
-import { Theme } from '@radix-ui/themes';
-import { Text } from '@radix-ui/themes';
+import { Theme, Text } from '@radix-ui/themes';
 import Header from '../components/Header.jsx';
 import Introduction from "../components/Introduction.jsx";
+import AboutMe from "../components/AboutMe.jsx";
+
 
 function App() {
 
@@ -22,7 +23,7 @@ function App() {
         <Header selected={navSelected} setSelected={setNavSelected}/>
         
         {navSelected === HOME && (<Introduction />)}
-        {navSelected === ABOUT_ME && (<Text>About Me Section TBD</Text>)}
+        {navSelected === ABOUT_ME && (<AboutMe />)}
         {navSelected === PROJECTS && (<Text>Projects Section TBD</Text>)}
         {navSelected === RESUME && (<Text>Resume Section TBD</Text>)}
 
