@@ -15,7 +15,7 @@ function App() {
   const PROJECTS = 3;
   const RESUME = 4;
   
-  const [navSelected, setNavSelected] = useState(PROJECTS);
+  const [navSelected, setNavSelected] = useState(HOME);
 
   return (
     <>
