@@ -4,6 +4,7 @@ import { Theme, Text } from '@radix-ui/themes';
 import Header from '../components/Header.jsx';
 import Introduction from "../components/Introduction.jsx";
 import AboutMe from "../components/AboutMe.jsx";
+import Projects2 from "../components/Projects2.jsx";
 
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
   const PROJECTS = 3;
   const RESUME = 4;
   
-  const [navSelected, setNavSelected] = useState(HOME);
+  const [navSelected, setNavSelected] = useState(PROJECTS);
 
   return (
     <>
@@ -24,7 +25,7 @@ function App() {
         
         {navSelected === HOME && (<Introduction />)}
         {navSelected === ABOUT_ME && (<AboutMe />)}
-        {navSelected === PROJECTS && (<Text>Projects Section TBD</Text>)}
+        {navSelected === PROJECTS && (<Projects2 />)}
         {navSelected === RESUME && (<Text>Resume Section TBD</Text>)}
 
       </Theme>
