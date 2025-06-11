@@ -21,6 +21,7 @@ const Header = ({ selected, setSelected }) => {
           {/* Navigation Links */}
           <Flex className="nav-links" gap="6" align="center">
             <Button 
+              className="nav-button"
               variant={selected === HOME ? "soft" : "ghost"} 
               radius="full" 
               onClick={() => setSelected(HOME)}
@@ -28,6 +29,7 @@ const Header = ({ selected, setSelected }) => {
               Home
             </Button>
             <Button 
+              className="nav-button"
               variant={selected === ABOUT_ME ? "soft" : "ghost"} 
               radius="full" 
               onClick={() => setSelected(ABOUT_ME)}
@@ -35,6 +37,7 @@ const Header = ({ selected, setSelected }) => {
               About Me
             </Button>
             <Button 
+              className="nav-button"
               variant={selected === PROJECTS ? "soft" : "ghost"} 
               radius="full" 
               onClick={() => setSelected(PROJECTS)}
@@ -42,6 +45,7 @@ const Header = ({ selected, setSelected }) => {
               Projects
             </Button>
             <Button 
+              className="nav-button"
               variant={selected === RESUME ? "soft" : "ghost"} 
               radius="full" 
               onClick={() => setSelected(RESUME)}

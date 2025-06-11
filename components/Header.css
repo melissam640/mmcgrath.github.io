@@ -11,6 +11,11 @@
   display: flex;
 }
 
+.nav-button {
+  min-width: 90px;
+  text-align: center;
+}
+
 .hamburger-menu {
   display: none;
 }
