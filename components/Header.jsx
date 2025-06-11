@@ -53,12 +53,12 @@ const Header = ({ selected, setSelected }) => {
           {/* Social Media Links */}
           <Flex gap="3">
             <IconButton size="2" variant="ghost" asChild>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/melissam640" target="_blank" rel="noopener noreferrer">
                 <GitHubLogoIcon />
               </a>
             </IconButton>
             <IconButton size="2" variant="ghost" asChild>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/melissa-mcgrath/" target="_blank" rel="noopener noreferrer">
                 <LinkedInLogoIcon />
               </a>
             </IconButton>
