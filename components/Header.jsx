@@ -1,5 +1,5 @@
-import { Flex, Text, Button, IconButton, Container } from "@radix-ui/themes";
-import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
+import { Flex, Box, Text, Button, IconButton, Container, DropdownMenu } from "@radix-ui/themes";
+import { HamburgerMenuIcon, GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 import './Header.css';
 
 const Header = ({ selected, setSelected }) => {
@@ -19,7 +19,7 @@ const Header = ({ selected, setSelected }) => {
           <Text size="4" weight="bold">Melissa McGrath</Text>
 
           {/* Navigation Links */}
-          <Flex gap="6" align="center">
+          <Flex className="nav-links" gap="6" align="center">
             <Button 
               variant={selected === HOME ? "soft" : "ghost"} 
               radius="full" 
@@ -50,8 +50,32 @@ const Header = ({ selected, setSelected }) => {
             </Button>
           </Flex>
 
-          {/* Social Media Links */}
-          <Flex gap="3">
+          <Flex gap="3" mt="1">
+            {/* Hamburger Menu */}
+            <Box className="hamburger-menu">
+              <DropdownMenu.Root>
+                <DropdownMenu.Trigger asChild>
+                  <IconButton variant="ghost" size="2">
+                    <HamburgerMenuIcon />
+                  </IconButton>
+                </DropdownMenu.Trigger>
+                <DropdownMenu.Content>
+                  <DropdownMenu.Item onSelect={() => setSelected(HOME)}>
+                    Home
+                  </DropdownMenu.Item>
+                  <DropdownMenu.Item onSelect={() => setSelected(ABOUT_ME)}>
+                    About Me
+                  </DropdownMenu.Item>
+                  <DropdownMenu.Item onSelect={() => setSelected(PROJECTS)}>
+                    Projects
+                  </DropdownMenu.Item>
+                  <DropdownMenu.Item onSelect={() => setSelected(RESUME)}>
+                    Resume
+                  </DropdownMenu.Item>
+                </DropdownMenu.Content>
+              </DropdownMenu.Root>
+            </Box>
+            {/* Social Media Links */}
             <IconButton size="2" variant="ghost" asChild>
               <a href="https://github.com/melissam640" target="_blank" rel="noopener noreferrer">
                 <GitHubLogoIcon />

@@ -6,3 +6,22 @@
   z-index: 1;
   transition: box-shadow 0.3s ease;
 }
+
+.nav-links {
+  display: flex;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+/* Small screen: hide full nav, show hamburger */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+}
