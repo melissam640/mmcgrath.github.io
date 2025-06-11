@@ -1,9 +1,13 @@
 import { Flex, Box, Grid, Text, Heading, Link } from "@radix-ui/themes";
+import { SiPython, SiFlask, SiPostgresql, SiSqlalchemy, SiJavascript, SiHtml5, 
+	SiCss3, SiBootstrap, SiJinja, SiNodedotjs, SiExpress, SiReact } 
+	from "react-icons/si";
+import ProjectIcon from "./ProjectIcon";
 import totalview from '../src/assets/totalview1.gif';
 import zanzibar from '../src/assets/zanzibar.gif';
 import './Projects.css';
 
-const Projects2 = () => {
+const Projects = () => {
   return (
     <Flex className="projects-section" direction="column" justify="left" align="center" p="2" gap="4">
       
@@ -30,6 +34,17 @@ const Projects2 = () => {
 			<Text color="gray" size="3" mt="3">
 				View on <Link href="https://github.com/melissam640/totalview.git" color="indigo">GitHub</Link> or watch the demo <Link href="https://www.youtube.com/watch?v=cfkpgqYO2BU" color="indigo">video</Link>. 
 			</Text>
+			<Grid className="project-icons" columns="9" gap="3" rows="1" mt="3">
+			  <ProjectIcon displayName="Python"><SiPython/></ProjectIcon>
+			  <ProjectIcon displayName="Flask"><SiFlask/></ProjectIcon>
+			  <ProjectIcon displayName="PostgreSQL"><SiPostgresql/></ProjectIcon>
+			  <ProjectIcon displayName="SQLAlchemy"><SiSqlalchemy/></ProjectIcon>
+			  <ProjectIcon displayName="JavaScript"><SiJavascript/></ProjectIcon>
+			  <ProjectIcon displayName="HTML"><SiHtml5/></ProjectIcon>
+			  <ProjectIcon displayName="CSS"><SiCss3/></ProjectIcon>
+			  <ProjectIcon displayName="Bootstrap"><SiBootstrap/></ProjectIcon>
+			  <ProjectIcon displayName="Jinja"><SiJinja/></ProjectIcon>
+			</Grid>
           </Box>
 
 		  {/* Row 2 */}
@@ -48,6 +63,14 @@ const Projects2 = () => {
 			<Text color="gray" size="3" mt="3">
 				View on <Link href="https://github.com/melissam640/zanzibar-game" color="indigo">GitHub</Link> or <Link href="https://zanzibar-dice-game.netlify.app/" color="indigo">play</Link>. 
 			</Text>
+			<Grid className="project-icons" columns="6" gap="3" rows="1" mt="3">
+			  <ProjectIcon displayName="Node.js"><SiNodedotjs/></ProjectIcon>
+			  <ProjectIcon displayName="Express"><SiExpress/></ProjectIcon>
+			  <ProjectIcon displayName="React"><SiReact/></ProjectIcon>
+			  <ProjectIcon displayName="HTML"><SiHtml5/></ProjectIcon>
+			  <ProjectIcon displayName="CSS"><SiCss3/></ProjectIcon>
+			  <ProjectIcon displayName="Bootstrap"><SiBootstrap/></ProjectIcon>
+			</Grid>
           </Box>
 
 		</Grid>
@@ -55,4 +78,4 @@ const Projects2 = () => {
   );
 };
 
-export default Projects2;
+export default Projects;
