@@ -4,13 +4,14 @@ import './Introduction.css';
 
 const Introduction = () => {
   return (
-    <Flex className="intro-section" justify="center" align="center" p="2" gap="4">
+    <Flex className="intro-section" justify="center" align="center" p="2" 
+    gap="4" direction={{ initial: "column", md: "row" }}>
       
       {/* Profile Photo*/}
       <img src={profile} alt="profile photo" className="profile-photo" />
 
       {/* Name and Introduction */}
-      <Box>
+      <Box className="responsive-align">
         <Text size="6">Hi, I'm</Text>
         <Heading size="9">Melissa McGrath.</Heading>
         <Text size="3">
