@@ -5,6 +5,7 @@ import Header from '../components/Header.jsx';
 import Introduction from "../components/Introduction.jsx";
 import AboutMe from "../components/AboutMe.jsx";
 import Projects2 from "../components/Projects2.jsx";
+import Resume from "../components/Resume.jsx";
 
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
         {navSelected === HOME && (<Introduction />)}
         {navSelected === ABOUT_ME && (<AboutMe />)}
         {navSelected === PROJECTS && (<Projects2 />)}
-        {navSelected === RESUME && (<Text>Resume Section TBD</Text>)}
+        {navSelected === RESUME && (<Resume />)}
 
       </Theme>
     </>
