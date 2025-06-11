@@ -1,12 +1,12 @@
 import { useState } from "react";
 import '@radix-ui/themes/styles.css';
-import { Theme, Text } from '@radix-ui/themes';
+import { Theme, Box } from '@radix-ui/themes';
 import Header from '../components/Header.jsx';
 import Introduction from "../components/Introduction.jsx";
 import AboutMe from "../components/AboutMe.jsx";
 import Projects2 from "../components/Projects2.jsx";
 import Resume from "../components/Resume.jsx";
-
+import "./App.css";
 
 function App() {
 
@@ -21,14 +21,14 @@ function App() {
   return (
     <>
       <Theme appearance="dark">
-
+        <Box className="fixed-background" />
+        
         <Header selected={navSelected} setSelected={setNavSelected}/>
         
         {navSelected === HOME && (<Introduction />)}
         {navSelected === ABOUT_ME && (<AboutMe />)}
         {navSelected === PROJECTS && (<Projects2 />)}
         {navSelected === RESUME && (<Resume />)}
-
       </Theme>
     </>
   );
